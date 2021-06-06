@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/special_gray"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/header_special_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="230dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/arrow" />
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/weight" />
+        <TextView
+            android:id="@+id/tv_main_weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="@color/special_purple"
+            android:textSize="34sp"
+            android:paddingLeft="120dp"
+            android:paddingTop="30dp"
+            />
+        <Button
+            android:id="@+id/btn_main_kg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_on_background_disabled"
+            android:textColor="@color/special_purple"
+            android:text="kg kaldı"
+            android:textSize="18sp"
+            android:paddingLeft="140dp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/arrow" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/food" />
+        <TextView
+            android:id="@+id/tv_main_calori"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="@color/special_purple"
+            android:textSize="34sp"
+            android:paddingLeft="120dp"
+            android:paddingTop="30dp"
+            />
+        <Button
+            android:id="@+id/btn_main_calori"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_on_background_disabled"
+            android:textColor="@color/special_purple"
+            android:text="kalori aldınız"
+            android:textSize="18sp"
+            android:paddingLeft="140dp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/arrow" />
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/water" />
+        <TextView
+            android:id="@+id/tv_main_water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="@color/special_purple"
+            android:textSize="34sp"
+            android:paddingLeft="120dp"
+            android:paddingTop="30dp"
+            />
+        <Button
+            android:id="@+id/btn_main_water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_on_background_disabled"
+            android:textColor="@color/special_purple"
+            android:text="ml su içtiniz"
+            android:textSize="18sp"
+            android:paddingLeft="140dp"
+            />
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout6"
+        app:layout_constraintVertical_bias="0.0" >
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/arrow" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/walk" />
+
+        <TextView
+            android:id="@+id/tv_main_walk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textColor="@color/special_purple"
+            android:textSize="34sp"
+            android:paddingLeft="120dp"
+            android:paddingTop="30dp"
+            />
+        <Button
+            android:id="@+id/btn_main_walk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_on_background_disabled"
+            android:textColor="@color/special_purple"
+            android:text="adım attınız"
+            android:textSize="18sp"
+            android:paddingLeft="150dp"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/lbl_headerScreen_header_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+
+            <FrameLayout
+                android:id="@+id/frm_Breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/breakFast"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/breakfast">
+
+                </ImageView>
+
+                <Button
+                    android:id="@+id/btn_Breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:width="370dp"
+                    android:background="@color/material_on_background_disabled"
+                    android:text="Breakfast"
+                    android:textColor="@color/special_purple"
+                    android:textSize="20sp"
+                    tools:ignore="ButtonStyle" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frm_Brunch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/brunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/brunch">
+
+                </ImageView>
+                <Button
+                    android:id="@+id/btn_Brunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="370dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/material_on_background_disabled"
+                    android:text="Brunch"
+                    android:textColor="@color/special_purple"
+                    android:textSize="20sp"
+                    tools:ignore="ButtonStyle" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/frm_Lunch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/lunch">
+
+                </ImageView>
+                <Button
+                    android:id="@+id/btn_Lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="370dp"
+                    android:background="@color/material_on_background_disabled"
+                    android:layout_margin="20dp"
+                    android:text="Lunch"
+                    android:textColor="@color/special_purple"
+                    android:textSize="20sp"
+                    tools:ignore="ButtonStyle" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/frm_Dinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dinner">
+
+                </ImageView>
+                <Button
+                    android:id="@+id/btn_Dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="370dp"
+                    android:layout_margin="20dp"
+                    android:text="Dinner"
+                    android:textColor="@color/white"
+                    android:background="@color/material_on_background_disabled"
+                    android:textSize="20sp"
+                    tools:ignore="ButtonStyle" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/frm_Supper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/supper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/supper">
+
+                </ImageView>
+                <Button
+                    android:id="@+id/btn_Supper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:width="370dp"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:background="@color/material_on_background_disabled"
+                    android:text="Supper"
+                    android:textSize="20sp"
+                    tools:ignore="ButtonStyle" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

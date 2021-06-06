@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/special_gray"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profile_Header"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/header_special_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/header_special_purple" />
+
+    <TextView
+        android:id="@+id/lbl_profile_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/lbl_profileScreen_header_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profile_Header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/profile_top"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Header">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/camera"
+            android:contentDescription="@string/img_btn_profile_take_chose_photo" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="43dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="@string/lbl_profileScreen_header_text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/goal_time_header_text"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/goal_time"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/designed_by"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintVertical_bias="0.46" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

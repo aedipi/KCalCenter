@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">KCalCenter</string>
+    <string name="username_hint">E-Mail (örn:example@xxx.com)</string>
+    <string name="password_hint">Şifre (örn:**********)</string>
+    <string name="lbl_login_text">GİRİŞ YAP</string>
+    <string name="btn_login_text">GİRİŞ YAP</string>
+    <string name="btn_loginScreen_Register_text">KAYIT OL</string>
+    <string name="rd_loginScreen_remember">Beni Hatırla</string>
+    <string name="lbl_RegisterScreen_Register_text">KAYIT OL</string>
+    <string name="name_hint">Ad (örn:John)</string>
+    <string name="surname_hint">Soyad (örn:Doe)</string>
+    <string name="repasword_hint">Şifre Tekrar (örn:**********)</string>
+    <string name="lbl_profileScreen_header_text">Profilim</string>
+    <string name="img_btn_profile_take_chose_photo">Fotoğraf seçmek ya da çekmek için tıklayınız.</string>
+    <string name="goal_time_header_text">Hedefe Kalan Süre</string>
+    <string name="goal_time">8 Hafta</string>
+    <string name="splash_header_text">KCalCenter</string>
+    <string name="splash_content_text">Hayallerinize bir tabak uzaktasınız!</string>
+    <string name="designed_by">Designed by ISORENDATA</string>
+    <string name="lbl_headerScreen_header_text">Ana Sayfa</string>
+    <string name="lbl_supper_activity">Supper</string>
+    <string name="lbl_breakfast_activity">Breakfast</string>
+    <string name="lbl_brunch_activity">Brunch</string>
+    <string name="lbl_dinner_activity">Dinner</string>
+    <string name="lbl_lunch_activity">Lunch</string>
+    <string name="lbl_water_activity">Water</string>
+    <string name="lbl_weight_activity">Weight</string>
+    <string-array name="foodList">
+        <item>Pilav</item>
+        <item>Kebap</item>
+        <item>Baklava</item>
+        <item>Güllaç</item>
+        <item>Makarna</item>
+        <item>Büryan</item>
+        <item>Kellepaça</item>
+        <item>İşkembe</item>
+        <item>Kokoreç</item>
+        <item>Midye</item>
+        <item>Köfte</item>
+        <item>Et Döner</item>
+        <item>Tavuk Döner</item>
+    </string-array>
+    <string-array name="waterList">
+        <item>Bir Bardak Su (ML)</item>
+        <item>Bir Şişe Su (ML)</item>
+    </string-array>
+</resources>

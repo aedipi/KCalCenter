@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/lbl_Login"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:text="@string/btn_login_text"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="360dp"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002">
+
+        <EditText
+            android:id="@+id/txt_login_Username"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/special_purple"
+            android:drawableStart="@drawable/user"
+            android:drawableLeft="@drawable/user"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/username_hint"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cardview_dark_background" />
+
+        <EditText
+            android:id="@+id/txt_login_Password"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:backgroundTint="@color/special_purple"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/password_hint"
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:password="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cardview_dark_background"
+            android:paddingStart="12dp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="191dp"
+        android:layout_height="54dp"
+        android:background="@drawable/login_register_button"
+        android:fontFamily="@font/montserrat"
+        android:onClick="Login"
+        android:text="@string/btn_login_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/special_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="211dp"
+        android:layout_height="66dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/btn_loginScreen_Register_text"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <RadioButton
+        android:id="@+id/rd_Remember"
+        android:layout_width="151dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/rd_loginScreen_remember"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:buttonTint="@color/special_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

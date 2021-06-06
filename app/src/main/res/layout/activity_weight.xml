@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".weightActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/header_special_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/lbl_weight_activity"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_current_weight"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/special_gray"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et_goal_weight"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/special_gray"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_current_weight"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_weight_calculate"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Hesapla"
+        android:background="@color/special_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_current_weight"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="141dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/weighing" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="82dp"
+        android:layout_height="28dp"
+        android:text="Kilonuz:"
+        android:textColor="@color/special_purple"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_current_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hedef Kilo:"
+        android:textColor="@color/special_purple"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_goal_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_current_weight" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
